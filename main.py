@@ -1,6 +1,6 @@
-
 from app.model.imdb import IMDB
 import csv
+
 
 def main():
     url = "https://www.imdb.com/"
@@ -12,7 +12,7 @@ def main():
     filename = "top_movies.csv"
 
     # Write the data to the CSV file
-    with open(filename, "w", newline="",encoding="utf-8") as csvfile:
+    with open(filename, "w", newline="", encoding="utf-8") as csvfile:
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         writer.writeheader()  # Write the header
         writer.writerows(data)  # Write the rows

@@ -14,6 +14,6 @@ def get_page_content(url):
         'Connection': 'keep-alive',
         'refere': 'https://example.com',
         'cookie': """your cookie value ( you can get that from your web page) """
-}
+    }
     req = Request(url, headers=head)
     return urlopen(req)
