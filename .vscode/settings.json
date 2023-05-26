@@ -1,0 +1,8 @@
+{
+    "python.analysis.extraPaths": [
+        "./app/utils",
+        "./app/model",
+        "app/model",
+        "IMDB-SCRAPER/app/model"
+    ]
+}
