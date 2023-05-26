@@ -36,9 +36,9 @@ class IMDB:
             # Extract the title ID from the URL using regular expressions
             title_id = re.search(r"/title/([a-zA-Z0-9]+)/", movie_url).group(1)
             summary = self.getSummaryByTitleId(title_id)
-            response["title"] = title
-            response["rating"] = rating
-            response["summary"] = summary
+            response["Title"] = title
+            response["Rating"] = rating
+            response["Summary"] = summary
             movies_list.append(response)
         return movies_list
             
